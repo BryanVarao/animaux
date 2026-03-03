@@ -92,19 +92,26 @@ section .contenu{
 }
 
 .contenu button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #07020D;
     color: #5db7de;
     padding: 44px 44px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
+.card{
+    position: relative;
+}
 /*------------------------------------------------------------------------------
    Éléments
 ------------------------------------------------------------------------------*/
 
 button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: transparent;
     border: none;
     cursor: pointer;
