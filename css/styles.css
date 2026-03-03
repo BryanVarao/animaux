@@ -91,11 +91,20 @@ section .contenu{
     border-radius: 10px;
 }
 
+.contenu button{
+    background-color: #07020D;
+    color: #5db7de;
+    padding: 44px 44px;
+}
+
 /*------------------------------------------------------------------------------
    Éléments
 ------------------------------------------------------------------------------*/
 
 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     border: none;
     cursor: pointer;
