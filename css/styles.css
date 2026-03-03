@@ -39,16 +39,24 @@ a{
 
 header{
     color: #07020d;
+    position: relative;
 }
 
+.header{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
 header .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(256, 256, 256, 80%) top center;
+    background: rgba(256, 256, 256, 0.8) top center;
     border-radius: 5px;
     padding: 10px 20px;
 }
+
 
 .wrapper .logo{
     font-size: 1.875rem;
@@ -60,6 +68,11 @@ header .wrapper{
 }
 
 /*------------------------------------------------------------------------------
-   Modules
+   Éléments
 ------------------------------------------------------------------------------*/
 
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
