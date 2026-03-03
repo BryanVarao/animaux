@@ -25,6 +25,9 @@ body{
     width: 1280px;
     margin: 0 auto;
 }
+a{
+    text-decoration: none;
+}
 
 /*------------------------------------------------------------------------------
    Mise en page
