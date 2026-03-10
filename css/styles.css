@@ -1,5 +1,5 @@
 /*----------------------------------------------------------------------------
-    Reset
+    Generic
 ----------------------------------------------------------------------------*/
 html {
     box-sizing: border-box;
@@ -18,27 +18,50 @@ html {
 body{
     font: 400 1.125/1,6em "Frank Ruhl Libre";
     color: #fff;
+
     background-color: #07020d;
-}
-
-.wrapper{
-    width: 1280px;
-    margin: 0 auto;
-}
-
-a{
-    color: inherit;
-    text-decoration: none;
 }
 
 /*------------------------------------------------------------------------------
    Mise en page
 ------------------------------------------------------------------------------*/
 
+.wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/*------------------------------------------------------------------------------
+   Element 
+------------------------------------------------------------------------------*/
+
+a{
+    color: inherit;
+
+    text-decoration: none;
+}
+
+button{
+    background-color: transparent;
+
+    border: none;
+    
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*------------------------------------------------------------------------------
+   Components
+------------------------------------------------------------------------------*/
+
 /*header*/
 
 header{
     color: #07020d;
+
     position: relative;
 }
 
@@ -48,14 +71,16 @@ header{
     left: 0;
     width: 100%;
     z-index: 999;
-    
 }
 header .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     background: rgba(256, 256, 256, 0.8) top center;
+
     border-radius: 5px;
+
     padding: 10px 20px;
     max-width: 800px;
 }
@@ -74,13 +99,14 @@ header .wrapper{
 
 .hero{
     height: 400px;
+
     background: url(../images/photos/mountains.jpg) no-repeat;
     background-size: cover;
 }
 
 /*contenu*/
 
-section .contenu{
+.contenu{
     padding: 100px 0;
 }
 
@@ -88,36 +114,28 @@ section .contenu{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
     border-radius: 10px;
 }
 
-.contenu button{
+.card .button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 44px;
+    width: 44px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     background-color: #07020D;
     color: #5db7de;
-    padding: 44px 44px;
-    border-radius: 5px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-}
 
-img{
-    max-width: 100%;
+    border-radius: 5px;
 }
 
 .card{
     position: relative;
-}
-/*------------------------------------------------------------------------------
-   Éléments
-------------------------------------------------------------------------------*/
-
-button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
 }
 
