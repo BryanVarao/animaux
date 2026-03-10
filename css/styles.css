@@ -209,11 +209,17 @@ img.zoom{
     width: 100%;
     height: 100vh;
 
+    padding: 30px;
+
     z-index: 9999;
 
     background-color: rgba(0, 0, 0, 0.8);
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+}
+
+.modal.visible{
+    display: flex;
 }
