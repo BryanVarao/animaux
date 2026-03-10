@@ -104,6 +104,10 @@ section .contenu{
     right: 20px;
 }
 
+img{
+    max-width: 100%;
+}
+
 .card{
     position: relative;
 }
@@ -117,6 +121,3 @@ button{
     cursor: pointer;
 }
 
-img{
-    max-width: 100%;
-}
